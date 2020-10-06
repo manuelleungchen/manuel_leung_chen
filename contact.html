@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for scaling Viewport -->
 
         <!-- Page Title -->
-        <title></title>
+        <title>Contact - Manuel Leung Chen</title>
 
         <!-- Reset CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -14,13 +14,70 @@
         <!-- Bootstrap  -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href=""> -->
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     </head>
     <body>
         <header>
+            <!-- Start Nav -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-info">
+                <!-- fanincon goes here -->
+                <span class="fas fa-dice-d6"></span> 
+
+                <div class="navbar-header">
+                    <h class="navbar-brand">Manuel Leung Chen</h>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Nav -->
         </header>
 
-        <footer>
+
+        <main class="container">
+            <form>
+                <div class="form-group">
+                    <label for="formInputName">Full Name</label>
+                    <input type="text" class="form-control" id="formInputName" placeholder="Firstname Lastname">
+                </div>
+                <div class="form-group">
+                    <label for="formInputEmail">Email Address</label>
+                    <input type="email" class="form-control" id="formInputEmail" placeholder="name@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="formInputMessage">Message</label>
+                    <input type="text" class="form-control" id="formInputMessage" placeholder="Say something ..." aria-describedby="messageHelp">
+                    <small id="messageHelp" class="form-text text-muted">I will response back as soon I get this message.</small>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-info">
+            <p>
+                &copy; 2020 Copyright
+            </p>
         </footer>
 
         <!-- Bootstrap JQuery and JavaScript -->
