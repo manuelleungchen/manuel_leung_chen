@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for scaling Viewport -->
 
         <!-- Page Title -->
-        <title></title>
+        <title>Portfolio - Manuel Leung Chen</title>
 
         <!-- Reset CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -15,12 +15,110 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href=""> -->
 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
     </head>
     <body>
         <header>
+            <!-- Start Nav -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-info">
+                <!-- fanincon goes here -->
+
+                <div class="navbar-header">
+                    <h class="navbar-brand"><span class="fas fa-dice-d6"></span> Manuel Leung Chen</h>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" href="./index.html">About</a>
+                        </li>
+                        <li class="nav-item active ml-auto">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Nav -->
         </header>
 
-        <footer>
+        <main class="container">
+            <header>
+                <h1>Projects</h1>
+            </header>
+
+            <article class="row">
+                <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 img-thumbnail" style="width: 18rem;">
+                    <img src="http://placehold.it/150x150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Project 1</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-primary">Gibhub</a>
+                      <a href="#" class="btn btn-primary">Site</a>
+                    </div>
+                  </div>
+                  <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 img-thumbnail" style="width: 18rem;">
+                    <img src="http://placehold.it/150x150" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Project 1</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-primary">Gibhub</a>
+                      <a href="#" class="btn btn-primary">Site</a>
+                    </div>
+                  </div>
+
+                  <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style="width: 18rem;">
+                    <img src="http://placehold.it/150x150" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Project 1</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-primary">Gibhub</a>
+                      <a href="#" class="btn btn-primary">Site</a>
+                    </div>
+                  </div>
+
+                <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" style="width: 18rem;">
+                    <img src="http://placehold.it/150x150" class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Project 1</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#" class="btn btn-primary">Gibhub</a>
+                      <a href="#" class="btn btn-primary">Site</a>
+                    </div>
+                  </div>
+
+                  <div class="card mb-4 shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/media/images/TodoApp.png">
+                    <div class="card-body">
+                      <p class="card-text">To Do Web Application</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="/jobs/2">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          </a>
+                        </div>
+                        <!-- <small class="text-muted">9 mins</small> -->
+                      </div>
+                    </div>
+                  </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-info">
+            <p>
+                &copy; 2020 Copyright
+            </p>
         </footer>
 
         <!-- Bootstrap JQuery and JavaScript -->
