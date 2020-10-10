@@ -1,5 +1,18 @@
 /* General Style Across Portfolio */
 
+/* This code stops the page from moving when clicking on a new link
+by adding the scrollbar on all pages */
+html {
+    overflow-y: scroll; 
+}
+
+/* This hidden the scrollbar without affecting the scrolling */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+/* Set body style */
 body {
     /* Create a background patterns with CSS */
     background-color:silver;
@@ -24,14 +37,23 @@ body {
     font-weight: bold;
 }
 
+/* Makes Navbar stick to top */
+#sticky-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
 /* Sets all styles for the main col inside the main tag */
 #wrapper {
     padding: 20px;
     margin: 20px;
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 120px;
     background-color: whitesmoke;
-    text-align: justify;
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.8;
@@ -45,7 +67,7 @@ h2 {
     font-weight: bold;
 }
 
-/* Sets style for footer tag */
+/* Sets style for footer and makes it stick to bottom */
 footer {
     position: fixed;
     bottom: 0;

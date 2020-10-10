@@ -39,13 +39,6 @@
 
 /* Sets image size and article wrapper for Screen same or below 400 pixels */
 @media screen and (max-width: 400px) {
-    #wrapper {
-        padding: 10px;
-        margin: 10px;
-        margin-top: 60px;
-        margin-bottom: 80px;
-    }
-    
     .image-container img {
         width: 330px;
         height: 330px;
