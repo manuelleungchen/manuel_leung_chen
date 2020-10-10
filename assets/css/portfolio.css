@@ -1,0 +1,55 @@
+/* Style for Portfolio images */
+
+/* Sets the padding and margin of image container */
+.image-container {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Sets the size, padding and margin for each portfolio image */
+.image-container img {
+    width: 350px;
+    height: 350px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* Sets image size for Screen same or below 1200 pixels */
+@media screen and (max-width: 1200px) {
+    .image-container img {
+        width: 300px;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Sets image size for Screen same or below 992 pixels */
+@media screen and (max-width: 992px) {
+    .image-container img {
+        width: 300px;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Sets image size and article wrapper for Screen same or below 400 pixels */
+@media screen and (max-width: 400px) {
+    #wrapper {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    
+    .image-container img {
+        width: 330px;
+        height: 330px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
