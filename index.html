@@ -5,8 +5,13 @@
         <meta charset="UTF-8"> <!-- Enconding type -->
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for scaling Viewport -->
 
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+
         <!-- Page Title -->
-        <link class="fas fa-dice-d6"></link>
         <title>About - Manuel Leung Chen</title>
 
         <!-- Reset CSS -->
@@ -14,131 +19,101 @@
         
         <!-- Bootstrap  -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href=""> -->
+        
+        <!-- CSS style -->
+        <link rel="stylesheet" href="./assets/css/general.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
+
+
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    </head>
+    </head><!-- head closing tag -->
 
-    <body class="bg-ligh">
+    <body>
         <header>
             <!-- Start Nav -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-info">
-                <!-- fanincon goes here -->
-                <!-- <span class="fas fa-dice-d6"></span>  -->
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="navbar-header">
-                    <h class="navbar-brand"><span class="fas fa-dice-d6"></span> Manuel Leung Chen</h>
+                    <a href="./index.html"><h1 class="navbar-brand" id="navbar-header"><span class="fas fa-dice-d6"></span> Manuel Leung</h1></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active ml-auto">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                        </li>
                         <li class="nav-item ml-auto">
                             <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>                        
+                        <li class="nav-item ml-auto active">
+                            <a class="nav-link" href="./index.html">About</a>
+                        </li>
                     </ul>
-                </div>
-            </nav>
+                </div><!-- .collapse navbar-collapse -->
+            </nav><!-- .navbar navbar-expand-md -->
             <!-- End Nav -->
-        </header>
+        </header><!-- header closing tag -->
 
         <main class="container">
-        <div class="row">
+            <div class="row">
+                <article class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="wrapper"> 
+                    <div class="row">
+                        <header class="col-12">
+                            <h2>About Me</h2>
+                            <hr>
+                        </header>
+                        
+                        <section class="col-12">
+                            <img src="./assets/images/IMG_7884.JPG" alt="Portrait of Manuel" id="portrait-image">
+                            <p> 
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a 
+                                type specimen book. It has survived not only five centuries, but also the 
+                                leap into electronic typesetting, remaining essentially unchanged. 
+                                Web Developer / Fried Chicken Addict.
+                                Pasionate Web Developer. Currently residing in Toronto, Canada 
+                                working in the technilogy field. Big fan of giant cuddling pandas.
+                            </p>
+                            <br>
+                        </section>
 
-            <article class="col-sm-12 col-md-12">
-                <header>
-                    <h2>Manuel Leung Chen</h2>
-                    <hr>
-                    <img src="./assets/images/IMG_7857.JPG" alt="Portrait of Manuel" class="d-inline" style="width: 200px;">
-
-                </header>
-            
-                <section>
-                    <p>Web Developer / Fried Chicken Addict.
-                        Pasionate Web Developer. Currently residing in Toronto, Canada 
-                        working in the technilogy field. Big fan of giant cuddling pandas.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a 
-                        type specimen book. It has survived not only five centuries, but also the 
-                        leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset sheets 
-                        containing Lorem Ipsum passages, and more recently with desktop publishing 
-                        software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a 
-                        type specimen book. It has survived not only five centuries, but also the 
-                        leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset sheets 
-                        containing Lorem Ipsum passages, and more recently with desktop publishing 
-                        software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </section>
-            </article>
-
-        <!-- <aside class="col-sm-12 col-md-12 col-lg-6 col-xl-3">
-            <header>
-                <h2>Academic</h2>
-            </header>
-            <ul>
-                <li>University Of Toronto, Conding Bootcamp</li>
-                <li>Seneca College, Compute Engineering Technology</li>
-                <li>Universidad Iberoamericana, Bachelor in Medicine</li>
-                <li>Centro Educational de Bonao, High School Diploma</li>
-            </ul>
-        </aside> -->
-
-        <!-- <aside class="col-sm-12 col-md-12 col-lg-6 col-xl-2">
-            <header>
-                <h2>Follow Me</h2>
-            </header>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/manuel-leung-chen/">Linkedin</a>
-                </li>
-                <li>
-                    <a href="https://github.com/manuelleungchen/">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/mleungc/">Instagram</a>
-                </li>
-            </ul>
-
-        </aside> -->
-    </div>
-        </main>
+                        <section class="col-12">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a 
+                                type specimen book. It has survived not only five centuries, but also the 
+                                leap into electronic typesetting, remaining essentially unchanged. 
+                                It was popularised in the 1960s with the release of Letraset sheets 
+                                containing Lorem Ipsum passages, and more recently with desktop publishing 
+                                software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </section>
+                    </div><!-- .row -->
+                </article><!-- #wrapper -->
+            </div><!-- .row -->
+        </main><!-- .container -->
 
         <!-- Footer -->
-        <footer class="bg-info">
-            <p>
+        <footer>
+            <h6>
                 &copy; 2020 Copyright
-            </p>
-        </footer>
+            </h6>
+        </footer><!-- footer closing tag -->
 
         <!-- Bootstrap JQuery and JavaScript -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
-
-
-
-</html>
+    </body><!-- body closing tag -->
+</html><!-- html closing tag -->
 
 

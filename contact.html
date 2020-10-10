@@ -5,6 +5,12 @@
         <meta charset="UTF-8"> <!-- Enconding type -->
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for scaling Viewport -->
 
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+
         <!-- Page Title -->
         <title>Contact - Manuel Leung Chen</title>
 
@@ -13,78 +19,86 @@
         
         <!-- Bootstrap  -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href=""> -->
-        
+
+        <!-- CSS style -->
+        <link rel="stylesheet" href="./assets/css/general.css">
+        <link rel="stylesheet" href="./assets/css/contact.css">
+
+
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    </head>
+    </head><!-- head closing tag -->
     <body>
         <header>
             <!-- Start Nav -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-info">
-                <!-- fanincon goes here -->
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="navbar-header">
-                    <h class="navbar-brand"><span class="fas fa-dice-d6"></span> Manuel Leung Chen</h>
+                    <a href="./index.html"><h1 class="navbar-brand" id="navbar-header"><span class="fas fa-dice-d6"></span> Manuel Leung</h1></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-itemm ml-auto">
-                            <a class="nav-link" href="./index.html">About</a>
+                        <li class="nav-item ml-auto active">
+                            <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item ml-auto">
                             <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item active ml-auto">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>                        
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" href="./index.html">About</a>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                </div><!-- .collapse navbar-collapse -->
+            </nav><!-- .navbar navbar-expand-md -->
             <!-- End Nav -->
-        </header>
-
+        </header><!-- header closing tag -->
 
         <main class="container">
-            <header>
-                <h1>Contact</h1>
-            </header>
-            <form>
-                <div class="form-group">
-                    <label for="formInputName">Full Name</label>
-                    <input type="text" class="form-control" id="formInputName" placeholder="Firstname Lastname">
-                </div>
-                <div class="form-group">
-                    <label for="formInputEmail">Email Address</label>
-                    <input type="email" class="form-control" id="formInputEmail" placeholder="name@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="formInputMessage">Message</label>
-                    <input type="text" class="form-control" id="formInputMessage" placeholder="Say something ..." aria-describedby="messageHelp">
-                    <small id="messageHelp" class="form-text text-muted">I will response back as soon I get this message.</small>
-
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </main>
+            <div class="row">
+                <article class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="wrapper">
+                    <div class="row">
+                        <header class="col-12">
+                            <h2>Contact</h2>
+                            <hr>
+                        </header>
+                        <form class="col-12">
+                            <section class="form-group">
+                                <label for="formInputName">Name</label>
+                                <input type="text" class="form-control" id="formInputName" placeholder="Name">
+                            </section>
+                            <section class="form-group">
+                                <label for="formInputEmail">Email</label>
+                                <input type="email" class="form-control" id="formInputEmail" placeholder="Email">
+                            </section>
+                            <section class="form-group">
+                                <label for="formInputMessage">Message</label>
+                                <textarea rows="5" class="form-control" id="formInputMessage" placeholder="Message"></textarea>
+                            </section>
+                            <section class="form-button">
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </section>
+                        </form><!-- form closing tag -->
+                    </div><!-- .row -->
+                </article><!-- #wrapper -->
+            </div><!-- .row -->
+        </main><!-- .container -->
 
         <!-- Footer -->
-        <footer class="bg-info">
-            <p>
+        <footer>
+            <h6>
                 &copy; 2020 Copyright
-            </p>
-        </footer>
+            </h6>
+        </footer><!-- footer closing tag -->
 
         <!-- Bootstrap JQuery and JavaScript -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
-</html>
+    </body><!-- body closing tag -->
+</html><!-- html closing tag -->
