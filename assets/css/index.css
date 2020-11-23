@@ -2,37 +2,36 @@
 
 /* Sets portrait paddings */
 #portrait-image {
-    float: left;
-    width: 55%;
-    margin-right: 20px;
+    width: 100%;
+    /* margin-right: 20px; */
     margin-bottom: 10px;
 }
 
 /* Sets portrait size and paddings for Screen below 993 pixels  */
 @media screen and (max-width: 992px) {
     #portrait-image {
-        float: left;
+        /* float: left;
         width: 55%;
         margin-right: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 10px; */
     }
 }
 
 /* Sets portrait size and paddings for Screen below 769 pixels  */
 @media screen and (max-width: 768px) {
     #portrait-image {
-        float: left;
+        /* float: left;
         width: 55%;
         margin-right: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 10px; */
     }
 }
 
 /* Sets portrait size and paddings for Screen below 401 pixels  */
 @media screen and (max-width: 400px) {
     #portrait-image {
-        width: 65%;
+        /* width: 65%;
         margin-right: 20px;
-        margin-bottom: 0px;
+        margin-bottom: 0px; */
     }
 }
