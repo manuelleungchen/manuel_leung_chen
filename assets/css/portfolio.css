@@ -81,6 +81,20 @@
       border: firebrick 2px solid;
   }
 
+  /* Modal Style */
+
+  /* .modal-dialog {
+      margin: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 0px;
+  } */
+
+  #modal-img {
+      width: 100%;
+  }
+
 /* Sets image size for Screen same or below 1200 pixels */
 @media screen and (max-width: 1200px) {
     /* .image-container img {
