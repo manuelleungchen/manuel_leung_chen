@@ -1,105 +1,138 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <!-- Meta tags -->
-        <meta charset="UTF-8"> <!-- Enconding type -->
-        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for scaling Viewport -->
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8"> <!-- Enconding type -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for scaling Viewport -->
 
-        <!-- Page Title -->
-        <title>Portfolio - Manuel Leung Chen</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
-        <!-- Reset CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-        
-        <!-- Bootstrap  -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Page Title -->
+    <title>Portfolio - Manuel Leung Chen</title>
 
-        <!-- CSS style -->
-        <link rel="stylesheet" href="./assets/css/general.css">
-        <link rel="stylesheet" href="./assets/css/portfolio.css">
-        <!-- <link rel="stylesheet" href="./assets/css/update.css"> -->
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    </head>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <body>
-        <header>
-            <!-- Start Nav -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sticky-navbar">
-                <div class="navbar-header">
-                    <a href="./index.html"><h1 class="navbar-brand" id="navbar-header"><span class="fas fa-dice-d6"></span> Manuel Leung</h1></a>
+    <!-- CSS style -->
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <!-- <link rel="stylesheet" href="./assets/css/update.css"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <!-- Start Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sticky-navbar">
+            <div class="navbar-header">
+                <a href="./index.html">
+                    <h1 class="navbar-brand" id="navbar-header"><span class="fas fa-dice-d6"></span> Manuel Leung</h1>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ml-auto active">
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="./index.html">About</a>
+                    </li>
+                </ul>
+            </div><!-- .collapse navbar-collapse -->
+        </nav><!-- .navbar navbar-expand-md -->
+        <!-- End Nav -->
+    </header><!-- header closing tag -->
+
+    <main class="container">
+        <div class="row">
+
+            <header class="col-12">
+                <h2>PROJECTS</h2>
+                <hr>
+            </header>
+
+            <div class="col-4 image-container">
+                <img src="./assets/images/Bonappvoyage.png" alt="Avatar" class="project-image" style="width:100%">
+                <div class="project-menu">
+                    <div class="project-title">BonAppVoyage</div>
+                    <div class="highlight">JavaScript/Bulma</div>
+                    <button class="more-button">LEARN MORE</button>
                 </div>
+            </div>
+            <div class="col-4 image-container">
+                <img src="./assets/images/Weather_dashboard.png" alt="Avatar" class="project-image" style="width:100%">
+                <div class="project-menu">
+                    <div class="project-title">Weather Dashboard</div>
+                    <div class="highlight">JavaScript/JQuery</div>
+                    <button class="more-button">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="col-4 image-container">
+                <img src="./assets/images/Password_generator.png" alt="Avatar" class="project-image" style="width:100%">
+                <div class="project-menu">
+                    <div class="project-title">Password Generator</div>
+                    <div class="highlight">JavaScript/BootStrap</div>
+                    <button class="more-button">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="col-4 image-container">
+                <img src="./assets/images/Coding_quiz.png" alt="Avatar" class="project-image" style="width:100%">
+                <div class="project-menu">
+                    <div class="project-title">Coding Quiz</div>
+                    <div class="highlight">JavaScript/BootStrap</div>
+                    <button class="more-button">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="col-4 image-container">
+                <img src="./assets/images/Workday_scheduler.png" alt="Avatar" class="project-image" style="width:100%">
+                <div class="project-menu">
+                    <div class="project-title">Work Day Scheduler</div>
+                    <div class="highlight">JavaScript/BootStrap</div>
+                    <button class="more-button">LEARN MORE</button>
+                </div>
+            </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        </div><!-- .row -->
+    </main><!-- .container -->
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item ml-auto active">
-                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                        </li>                        
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link" href="./index.html">About</a>
-                        </li>
-                    </ul>
-                </div><!-- .collapse navbar-collapse -->
-            </nav><!-- .navbar navbar-expand-md -->
-            <!-- End Nav -->
-        </header><!-- header closing tag -->
+    <!-- Footer -->
+    <footer>
+        <h6>
+            &copy; 2020 Copyright
+        </h6>
+    </footer><!-- footer closing tag -->
 
-        <main class="container">
-            <div class="row">
-                <article class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="wrapper">
-                    <div class="row">
-                        <header class="col-12">
-                            <h2>Portfolio</h2>
-                            <hr>
-                        </header>
-                        <section class="image-container col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="./assets/images/banff_lake.JPG" alt="project 1 image">
-                        </section>
-                        <section class="image-container col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="./assets/images/scarborough Bluff.JPG" alt="project 1 image">
-                        </section>
-                        <section class="image-container col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="./assets/images/banff_lake.JPG" alt="project 1 image">
-                        </section>
-                        <section class="image-container col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="./assets/images/scarborough Bluff.JPG" alt="project 1 image">
-                        </section>
-                        <section class="image-container col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="./assets/images/banff_lake.JPG" alt="project 1 image">
-                        </section>
-                        <section class="image-container col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <img src="./assets/images/scarborough Bluff.JPG" alt="project 1 image">
-                        </section>
-                    </div><!-- .row -->
-                </article><!-- #wrapper -->
-            </div><!-- .row -->
-        </main><!-- .container -->
+    <!-- Bootstrap JQuery and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body><!-- body closing tag -->
 
-        <!-- Footer -->
-        <footer>
-            <h6>
-                &copy; 2020 Copyright
-            </h6>
-        </footer><!-- footer closing tag -->
-
-        <!-- Bootstrap JQuery and JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body><!-- body closing tag -->
 </html><!-- html closing tag -->
