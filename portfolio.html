@@ -37,9 +37,7 @@
         <!-- Start Nav -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sticky-navbar">
             <div class="navbar-header">
-                <a href="./index.html">
-                    <h1 class="navbar-brand" id="navbar-header"><span class="fas fa-dice-d6"></span> Manuel Leung</h1>
-                </a>
+                <a href="./index.html"><h1 class="navbar-brand" id="navbar-header">Manuel Leung Chen</h1></a>
             </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -72,52 +70,77 @@
                 <hr>
             </header>
 
-            <div class="col-4 image-container">
+            <div class="col-sm-12 col-md-6 col-lg-4 image-container">
                 <img src="./assets/images/Bonappvoyage.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu">
+                <div class="project-menu" data-descrip="Cooking App that obtains a list of food recipes and points of interest of random cities.">
                     <div class="project-title">BonAppVoyage</div>
                     <div class="highlight">JavaScript/Bulma</div>
-                    <button class="more-button">LEARN MORE</button>
+                    <button data-github="https://github.com/UofTbootcampgroupproject/bonAPPvoyage"
+                        data-url="https://uoftbootcampgroupproject.github.io/bonAPPvoyage/" class="more-button"
+                         data-toggle="modal" data-target="#exampleModal">LEARN MORE
+                    </button>
                 </div>
             </div>
-            <div class="col-4 image-container">
+            <div class="col-sm-12 col-md-6 col-lg-4 image-container">
                 <img src="./assets/images/Weather_dashboard.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu">
+                <div class="project-menu" data-descrip="Weather app that provides current and future weather forecasts in cities.">
                     <div class="project-title">Weather Dashboard</div>
                     <div class="highlight">JavaScript/JQuery</div>
-                    <button class="more-button">LEARN MORE</button>
+                    <button data-github="https://github.com/manuelleungchen/Weather-Dashboard"
+                        data-url="https://manuelleungchen.github.io/Weather-Dashboard/" class="more-button"
+                data-toggle="modal" data-target="#exampleModal">LEARN MORE
+                    </button>
                 </div>
             </div>
-            <div class="col-4 image-container">
+            <div class="col-sm-12 col-md-6 col-lg-4 image-container">
                 <img src="./assets/images/Password_generator.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu">
+                <div class="project-menu" data-descrip="Web App that generates a random password based on user criteria. ">
                     <div class="project-title">Password Generator</div>
                     <div class="highlight">JavaScript/BootStrap</div>
-                    <button class="more-button">LEARN MORE</button>
-                </div>
-            </div>
-            <div class="col-4 image-container">
-                <img src="./assets/images/Coding_quiz.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu">
-                    <div class="project-title">Coding Quiz</div>
-                    <div class="highlight">JavaScript/BootStrap</div>
-                    <button class="more-button">LEARN MORE</button>
-                </div>
-            </div>
-            <div class="col-4 image-container">
-                <img src="./assets/images/Workday_scheduler.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu">
-                    <div class="project-title">Work Day Scheduler</div>
-                    <div class="highlight">JavaScript/BootStrap</div>
-                    <button class="more-button">LEARN MORE</button>
+                    <button data-github="https://github.com/manuelleungchen/Password-Generator"
+                        data-url="https://manuelleungchen.github.io/Password-Generator/" class="more-button"
+                         data-toggle="modal" data-target="#exampleModal">LEARN MORE
+                    </button>
                 </div>
             </div>
 
         </div><!-- .row -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <img id="modal-img" src="./assets/images/Weather_dashboard.png" alt="">
+                    <div class="modal-header">
+                        <h5 class="modal-title"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modal-descrip"></p>
+                        <a href="" id="github-button" class="btn btn-secondary">GitHub</a>
+                        <a href="" id="url-button" class="btn btn-secondary">Visit Site</a>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main><!-- .container -->
 
     <!-- Footer -->
     <footer>
+        <section>
+            <a href="https://www.linkedin.com/in/manuel-leung-chen/" target="_blank">
+                <span class="fab fa-linkedin"></span>
+              </a>
+              <a href="https://github.com/manuelleungchen" target="_blank">
+                <span class="fab fa-github"></span>
+              </a>
+              <a href="./assets/Resume.pdf" download target="_blank">
+                <span class="far fa-file-pdf"></span>
+              </a>
+        </section>
         <h6>
             &copy; 2020 Copyright
         </h6>
@@ -133,6 +156,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body><!-- body closing tag -->
 
 </html><!-- html closing tag -->
