@@ -30,14 +30,21 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@400;500&family=Indie+Flower&family=Texturina:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- Start Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sticky-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="navbar-header">
-                <a href="./index.html"><h1 class="navbar-brand" id="navbar-header">Manuel Leung Chen</h1></a>
+                <a href="./index.html">
+                    <h1 class="navbar-brand" id="navbar-header">Manuel Leung</h1>
+                </a>
             </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -48,13 +55,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="./contact.html">Contact</a>
+                        <a class="nav-link" href="./index.html">About</a>
                     </li>
                     <li class="nav-item ml-auto active">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        <a class="nav-link" id="active-page" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item ml-auto">
-                        <a class="nav-link" href="./index.html">About</a>
+                        <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
                 </ul>
             </div><!-- .collapse navbar-collapse -->
@@ -62,7 +69,7 @@
         <!-- End Nav -->
     </header><!-- header closing tag -->
 
-    <main class="container">
+    <main id="portfolio-container">
         <div class="row">
 
             <header class="col-12">
@@ -72,34 +79,37 @@
 
             <div class="col-sm-12 col-md-6 col-lg-4 image-container">
                 <img src="./assets/images/Bonappvoyage.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu" data-descrip="Cooking App that obtains a list of food recipes and points of interest of random cities.">
+                <div class="project-menu"
+                    data-descrip="Cooking App that obtains a list of food recipes and points of interest of random cities.">
                     <div class="project-title">BonAppVoyage</div>
                     <div class="highlight">JavaScript/Bulma</div>
                     <button data-github="https://github.com/UofTbootcampgroupproject/bonAPPvoyage"
                         data-url="https://uoftbootcampgroupproject.github.io/bonAPPvoyage/" class="more-button"
-                         data-toggle="modal" data-target="#exampleModal">LEARN MORE
+                        data-toggle="modal" data-target="#exampleModal">LEARN MORE
                     </button>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 image-container">
                 <img src="./assets/images/Weather_dashboard.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu" data-descrip="Weather app that provides current and future weather forecasts in cities.">
+                <div class="project-menu"
+                    data-descrip="Weather app that provides current and future weather forecasts in cities.">
                     <div class="project-title">Weather Dashboard</div>
                     <div class="highlight">JavaScript/JQuery</div>
                     <button data-github="https://github.com/manuelleungchen/Weather-Dashboard"
                         data-url="https://manuelleungchen.github.io/Weather-Dashboard/" class="more-button"
-                data-toggle="modal" data-target="#exampleModal">LEARN MORE
+                        data-toggle="modal" data-target="#exampleModal">LEARN MORE
                     </button>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 image-container">
                 <img src="./assets/images/Password_generator.png" alt="Avatar" class="project-image" style="width:100%">
-                <div class="project-menu" data-descrip="Web App that generates a random password based on user criteria. ">
+                <div class="project-menu"
+                    data-descrip="Web App that generates a random password based on user criteria. ">
                     <div class="project-title">Password Generator</div>
                     <div class="highlight">JavaScript/BootStrap</div>
                     <button data-github="https://github.com/manuelleungchen/Password-Generator"
                         data-url="https://manuelleungchen.github.io/Password-Generator/" class="more-button"
-                         data-toggle="modal" data-target="#exampleModal">LEARN MORE
+                        data-toggle="modal" data-target="#exampleModal">LEARN MORE
                     </button>
                 </div>
             </div>
@@ -132,14 +142,13 @@
     <footer>
         <section>
             <a href="https://www.linkedin.com/in/manuel-leung-chen/" target="_blank">
-                <span class="fab fa-linkedin"></span>
-              </a>
-              <a href="https://github.com/manuelleungchen" target="_blank">
-                <span class="fab fa-github"></span>
-              </a>
-              <a href="./assets/Resume.pdf" download target="_blank">
-                <span class="far fa-file-pdf"></span>
-              </a>
+                <span class="fab fa-linkedin"></span></a>
+            <a href="https://github.com/manuelleungchen" target="_blank">
+                <span class="fab fa-github"></span></a>
+            <a href="https://www.instagram.com/mleungc/" target="_blank">
+                <span class="fab fa-instagram"></span></a>
+            <a href="./assets/Resume.pdf" download target="_blank">
+                <span class="far fa-file-pdf"></span></a>
         </section>
         <h6>
             &copy; 2020 Copyright
@@ -158,6 +167,9 @@
         crossorigin="anonymous"></script>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/portfolio.js"></script>
+
+
 </body><!-- body closing tag -->
 
 </html><!-- html closing tag -->

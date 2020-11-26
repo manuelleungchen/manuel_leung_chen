@@ -1,21 +1,30 @@
 
-let modalTitle = document.querySelector(".modal-title");
-let modalDescrip = document.querySelector("#modal-descrip");
-let modalImg = document.querySelector("#modal-img");
-let modalGithubButton = document.querySelector("#github-button");
-let modalUrlButton = document.querySelector("#url-button");
 
+function myMoveHeader() {
+    // elementToMove identifies the "red box" whose id is animate
+    var elementToMove = document.getElementById("navbar-header");
 
-$('.more-button').on('click', function () {
-    let projectMenu = $(this).parent();
+    // Set some variable called pos to 0. 
+    var pos = -70;
 
-    modalTitle.textContent = $(this).siblings(".project-title").text();
-    modalDescrip.textContent = projectMenu.attr("data-descrip");
+    // This code defines a function called frame. It is just written differently
+    var frame = function () {
+        // if pos is 350 (probably position) 
+        if (pos == -5) 
+        {    // Stop the function from being call once the pos is 350
+            clearInterval(id);
+        } 
+        //  
+        else 
+        {   // If not a pos 350, keep increasing the position by 1 
+            pos++;  // increasing pos by 1 
+            elementToMove.style.top = pos + "px";  // Find the red square and move it 1 px to the right by increasing its distance the distance from the left
+        }
+    }
 
-    modalImg.src = projectMenu.siblings(".project-image").attr("src");
+    // setInterval calls a function (frame) every 5 milliseconds 
+    var id = window.setInterval(frame, 20);
+}
 
-    modalGithubButton.setAttribute("href", $(this).data("github"))
-    modalUrlButton.setAttribute("href", $(this).data("url"))
-
-})
+myMoveHeader()
 

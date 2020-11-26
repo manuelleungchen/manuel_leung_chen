@@ -28,30 +28,37 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@400;500&family=Indie+Flower&family=Texturina:wght@700&display=swap"
+        rel="stylesheet">
     </head><!-- head closing tag -->
     <body>
         <header>
             <!-- Start Nav -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sticky-navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="navbar-header">
-                    <a href="./index.html"><h1 class="navbar-brand" id="navbar-header">Manuel Leung Chen</h1></a>
+                    <a href="./index.html">
+                        <h1 class="navbar-brand" id="navbar-header">Manuel Leung</h1>
+                    </a>
                 </div>
-
+    
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+    
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ml-auto active">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" href="./index.html">About</a>
                         </li>
                         <li class="nav-item ml-auto">
                             <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                        </li>                        
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link" href="./index.html">About</a>
+                        </li>
+                        <li class="nav-item ml-auto active">
+                            <a class="nav-link" id="active-page" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </div><!-- .collapse navbar-collapse -->
@@ -59,9 +66,9 @@
             <!-- End Nav -->
         </header><!-- header closing tag -->
 
-        <main class="container">
+        <main id="contact-container">
             <div class="row">
-                <article class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="wrapper">
+                <article class="col-12">
                     <div class="row">
                         <header class="col-12">
                             <h2>Contact</h2>
@@ -81,7 +88,7 @@
                                 <textarea rows="5" class="form-control" id="formInputMessage" placeholder="Message"></textarea>
                             </section>
                             <section class="form-button">
-                                <button type="submit" class="btn btn-info">Submit</button>
+                                <button type="submit" id="submit-btn">Submit</button>
                             </section>
                         </form><!-- form closing tag -->
                     </div><!-- .row -->
@@ -90,26 +97,26 @@
         </main><!-- .container -->
 
         <!-- Footer -->
-        <footer>
-            <section>
-                <a href="https://www.linkedin.com/in/manuel-leung-chen/" target="_blank">
-                    <span class="fab fa-linkedin"></span>
-                  </a>
-                  <a href="https://github.com/manuelleungchen" target="_blank">
-                    <span class="fab fa-github"></span>
-                  </a>
-                  <a href="./assets/Resume.pdf" download target="_blank">
-                    <span class="far fa-file-pdf"></span>
-                  </a>
-            </section>
-            <h6>
-                &copy; 2020 Copyright
-            </h6>
-        </footer><!-- footer closing tag -->
+    <footer>
+        <section>
+            <a href="https://www.linkedin.com/in/manuel-leung-chen/" target="_blank">
+                <span class="fab fa-linkedin"></span></a>
+            <a href="https://github.com/manuelleungchen" target="_blank">
+                <span class="fab fa-github"></span></a>
+            <a href="https://www.instagram.com/mleungc/" target="_blank">
+                <span class="fab fa-instagram"></span></a>
+            <a href="./assets/Resume.pdf" download target="_blank">
+                <span class="far fa-file-pdf"></span></a>
+        </section>
+        <h6>
+            &copy; 2020 Copyright
+        </h6>
+    </footer><!-- footer closing tag -->
 
         <!-- Bootstrap JQuery and JavaScript -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
     </body><!-- body closing tag -->
 </html><!-- html closing tag -->
