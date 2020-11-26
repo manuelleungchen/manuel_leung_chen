@@ -1,42 +1,71 @@
 /* Style for Index Image */
 
+#index-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: black;
+}
+
+#about-container h3 {
+    font-family: 'Texturina', serif;
+}
+
+#about-container p {
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+}
+
 /* Sets portrait paddings */
 #portrait-image {
     width: 100%;
-    /* margin-right: 20px; */
-    margin-bottom: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Adds rounded corner to images */
-img {
-    border-radius: 15px;
+#email-button {
+    text-align: center;
 }
 
-/* Sets portrait size and paddings for Screen below 993 pixels  */
-@media screen and (max-width: 992px) {
-    #portrait-image {
-        /* float: left;
-        width: 55%;
-        margin-right: 20px;
-        margin-bottom: 10px; */
+#email-button a{
+    background-color: #88BDBC;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #email-button a {
+        width: 90%;
+
     }
 }
 
 /* Sets portrait size and paddings for Screen below 769 pixels  */
-@media screen and (max-width: 768px) {
-    #portrait-image {
-        /* float: left;
-        width: 55%;
-        margin-right: 20px;
-        margin-bottom: 10px; */
+@media screen and (max-width: 500px) {
+    #email-button a {
+        width: 100%;
     }
 }
 
-/* Sets portrait size and paddings for Screen below 401 pixels  */
-@media screen and (max-width: 400px) {
-    #portrait-image {
-        /* width: 65%;
-        margin-right: 20px;
-        margin-bottom: 0px; */
-    }
-}
+
+

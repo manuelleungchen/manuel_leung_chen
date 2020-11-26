@@ -1,25 +1,19 @@
 /* Style for Portfolio images */
 
-.container {
+#portfolio-container {
     /* padding-top: 100px; */
     padding: 30px;
-    /* margin: 20px; */
-    margin-top: 100px;
-    margin-bottom: 120px;
-    background-color: whitesmoke;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-    border-radius: 15px;
-    border: solid 1px gray;
+    text-align: center;
+    background-color: #E3E2DF;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    color: black;
+
 }
 
 /* Sets the padding and margin of image container */
 .image-container {
     padding: 0px;
     margin: 0px;
-    
 }
 
 /* Sets the size, padding and margin for each portfolio image */
@@ -62,23 +56,24 @@
     opacity: 1;
   }
 
-  .more-button:hover {
-    background-color: firebrick;
-    color: white;
-  }
-  
   .project-title {
     color: black;
     font-size: 20px;
     font-weight: bolder;
   }
   .highlight {
-    color: darkred;
-    font-size: 18px;
+    color: #2f8583;
+    font-size: 25px;
   }
   .more-button {
-      /* border-color: firebrick; */
-      border: firebrick 2px solid;
+      background-color: #043332;
+      border: none;
+      color: white;
+  }
+
+  .more-button:hover {
+    background-color: #88BDBC;
+    color: black;
   }
 
   /* Modal Style */
@@ -96,13 +91,6 @@
   }
 
 /* Sets image size for Screen same or below 1200 pixels */
-@media screen and (max-width: 1200px) {
-    /* .image-container img {
-        width: 300px;
-        height: 300px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    } */
-}
+
 
 

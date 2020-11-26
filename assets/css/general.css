@@ -4,6 +4,7 @@
 by adding the scrollbar on all pages */
 html {
     overflow-y: scroll; 
+    height: 100%;
 }
 
 /* This hidden the scrollbar without affecting the scrolling */
@@ -15,28 +16,34 @@ html {
 /* Set body style */
 body {
     /* Create a background patterns with CSS */
-    background-color:silver;
-    background-image:
-    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
-    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
-    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
-    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
-    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
-    background-size: 100px 50px;
+    background-color: #E3E2DF;
+    
     /* Set the font style across the whole body tag */
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    /* height: 0%; */
+}
+
+header nav{
+    background-color: #A4B3B6;
+    font-family: 'Big Shoulders Inline Text', cursive;
 }
 
 /* Sets style for the Nav Bar */
 #navbar-header {
-    background-color: #f7f7f7;
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    background-color: #A4B3B6;
+    color: #474B4F;
+    font-family: 'Texturina', serif;
+    font-size: 35px;
     font-weight: bold;
+
+    position: absolute;
+    top: -70px;
+    left: 20px;
 }
 
+#active-page {
+    font-size: 25px;
+}
 /* Makes Navbar stick to top */
 #sticky-navbar {
     position: fixed;
@@ -46,51 +53,37 @@ body {
     z-index: 1;
 }
 
-/* Sets all styles for the main col inside the main tag */
-#wrapper {
-    padding: 20px;
-    margin: 20px;
-    margin-top: 100px;
-    margin-bottom: 120px;
-    background-color: whitesmoke;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-    border-radius: 15px;
-    border: solid 2px gray;
-}
+
 
 /* Sets style for the page header */
-h2 {
-    color: #5eb3af;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
-    font-weight: bold;
-}
+
 
 /* Sets style for footer and makes it stick to bottom */
 footer {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     right: 0;
-    left: 0;
-    color: whitesmoke;
-    background-color: #666666;
-    border-top: solid 10px #4aaaa5;
+    left: 0; */
+    /* background-color: #A4B3B6; */
+    background-color: #E3E2DF;
+    /* border-top: solid 2px #88BDBC; */
     text-align: center;
-
 }
 
 footer span {
-    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 35px;
+    color: #88BDBC;
 }
+
 
 /* Sets style for Footer font */
 footer h6 {
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #88BDBC;
+
     /* color: whi */
 }
 
