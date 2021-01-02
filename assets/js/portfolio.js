@@ -15,6 +15,8 @@ $('.more-button').on('click', function () {
     modalImg.src = projectMenu.siblings(".project-image").attr("src");
 
     modalGithubButton.setAttribute("href", $(this).data("github"))
-    modalUrlButton.setAttribute("href", $(this).data("url"))
+    modalGithubButton.setAttribute("target", "_blank")
 
+    modalUrlButton.setAttribute("href", $(this).data("url"))
+    modalUrlButton.setAttribute("target", "_blank")
 })
